@@ -111,10 +111,10 @@
               </a>
             </li>
             <li class="nav-item d-none d-lg-block ml-lg-4">
-              <a href="#" target="_blank" class="btn bg-success btn-icon text-white" target="_blank">
-                <span class="btn-inner--icon"><i class="ni ni-active-40"></i></span>
+              <button type="button" data-toggle="modal" data-target="#register" target="_blank" class="btn bg-success btn-icon text-white" target="_blank">
+                <span class="btn-inner--icon"><i class="ni ni-badge"></i></span>
                 <span class="btn-inner--text">Daftar Sekarang</span>
-              </a>
+              </button>
             </li>
           </ul>
         </div>
@@ -148,24 +148,24 @@
                 <p class="lead text-white"><strong>Membuka Pendaftaran Santri Baru TP 2019/2020.</strong></p>
                 <div class="btn-wrapper mt-5">
                   <a href="https://www.darulquran.sch.id/dqm/" class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0" target="__blank">
-                    <span class="btn-inner--icon"><i class="ni ni-cloud-download-95"></i></span>
+                    <span class="btn-inner--icon"><i class="ni ni-bulb-61"></i></span>
                     <span class="btn-inner--text">Info Darul Qur'an Mulia</span>
                   </a>
-                  <a href="https://github.com/creativetimofficial/argon-design-system" class="btn btn-lg bg-success btn-icon text-white mb-3 mb-sm-0" target="_blank">
-                    <span class="btn-inner--icon"><i class="ni ni-active-40"></i></span>
+                  <button type="button" data-toggle="modal" data-target="#register" target="_blank" class="btn btn-lg bg-success btn-icon text-white" target="_blank">
+                    <span class="btn-inner--icon"><i class="ni ni-badge"></i></span>
                     <span class="btn-inner--text">Daftar Sekarang</span>
-                  </a>
+                  </button>
                 </div>
                 <div class="btn-wrapper mt-5"></div>
                 <div class="mt-5">
                   <strong class="text-white font-weight-bold mb-0 mr-2">Pesantren Terpadu Darul Qur'an Mulia</strong>
                 </div>
                 <div class="mt-5">
-                  <a href="tel:081288829847" class="btn btn-icon btn-primary text-white" onclick="return false;">
+                  <a href="tel:081288829847" class="btn btn-icon btn-primary text-white mt-3" onclick="return false;">
                     <span class="btn-inner--icon"><i class="fa fa-phone"></i></span>
                     <span class="btn-inner--text">0812 8882 9847</span>
                   </a>
-                  <a href="#" class="btn btn-icon btn-primary text-white">
+                  <a href="https://api.whatsapp.com/send?phone=6285695506908&text=INFO%20PSB%20DQM&source=&data=" target="_blank" class="btn btn-icon btn-primary text-white mt-3">
                     <span class="btn-inner--icon"><i class="fa fa-whatsapp"></i></span>
                     <span class="btn-inner--text">WhatsApp</span>
                   </a>  
@@ -174,16 +174,84 @@
             </div>
           </div>
         </div>
-        <!-- SVG separator -->
-        <div class="separator separator-bottom separator-skew zindex-100">
-          <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
-          </svg>
-        </div>
       </section>
     </div>
-    
   </main>
+
+  <!-- Modal -->
+   <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><strong>Formulir Pendaftaran</strong></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Nama Lengkap</label>
+                  <input type="text" class="form-control form-control-alternative form-control-sm" placeholder="Nama Lengkap" name="">
+                </div>
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Tanggal Lahir</label>
+                  <input type="date" class="form-control form-control-alternative form-control-sm" name="">
+                </div>
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Jenis Kelamin</label>
+                  <select name="" class="form-control form-control-alternative form-control-sm">
+                    <option selected disabled>- Pilih Jenis Kelamin -</option>
+                    <option value="">Laki Laki</option>
+                    <option value="">Perempuan</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Asal Daerah</label>
+                  <select name="" class="form-control form-control-alternative form-control-sm">
+                    <option selected disabled>- Pilih Asal Daerah -</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Nama Orangtua</label>
+                  <input type="text" class="form-control form-control-alternative form-control-sm" placeholder="Nama Orangtua" name="">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Nomor WhatsApp Aktif</label>
+                  <input type="number" class="form-control form-control-alternative form-control-sm" placeholder="Nomor WhatsApp Aktif" name="">
+                </div>
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Mendaftar Ke -</label>
+                  <select name="" class="form-control form-control-alternative form-control-sm">
+                    <option selected disabled>Mendaftar Ke -</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Tipe Asal Sekolah</label>
+                  <select name="" class="form-control form-control-alternative form-control-sm">
+                    <option selected disabled>- Pilih Tipe Asal Sekolah -</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Nama Asal Sekolah</label>
+                  <input type="text" class="form-control form-control-alternative form-control-sm" placeholder="Nama Asal Sekolah" name="">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Core -->
   <script src="./assets/vendor/jquery/jquery.min.js"></script>
   <script src="./assets/vendor/popper/popper.min.js"></script>
